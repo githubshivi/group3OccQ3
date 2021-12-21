@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Osborn</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Shreea's Part -->
+    <header>
+      <div class="container header-container">
+        <div class="header-row">
+          <div class="header-col-1">
+            <div class="image-container">
+              <img src="images/osborn_logo.svg" alt="demo" />
+            </div>
+            <i class="fas fa-bars" id="hamburger"></i>
+          </div>
+          <div class="header-col-sm">
+            <ul>
+              <li id="global-drop-sm" class="list-item item-1">
+                <img
+                  src="images/ob-globe-icon.svg"
+                  width="23px"
+                  style="margin-top: -5px"
+                  alt=""
+                />
+                EN
+                <div class="global-dropdown-sm">
+                  <div class="drop-item first-border">
+                    <div class="sub-item-1">Region</div>
+                    <div class="sub-item-2">Language</div>
+                  </div>
+
+                  <div class="drop-item">
+                    <div class="sub-item-1">North America</div>
+                    <div class="sub-item-2">English</div>
+                  </div>
+                  <div class="drop-item">
+                    <div class="sub-item-1">Global</div>
+                    <div class="sub-item-2">English</div>
+                  </div>
+                  <div class="drop-item">
+                    <div class="sub-item-1"></div>
+                    <div class="sub-item-2">German</div>
+                  </div>
+                  <div class="drop-item">
+                    <div class="sub-item-1"></div>
+                    <div class="sub-item-2">Swedish</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img
+                  id="search-img-sm"
+                  src="images/ob-search-icon.svg"
+                  width="23px"
+                  alt=""
+                />
+                <div id="search-box-sm">
+                  <input type="text" placeholder="Search.." id="myInput" />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header-col-2">
+            <ul class="list-group">
+              <li class="list-item">Contact</li>
+              <li class="list-item" id="about-drop">
+                About
+                <div class="about-dropdown">
+                  <div class="drop-item">Why Osborn</div>
+                  <div class="drop-item">Company History</div>
+                  <div class="drop-item">Careers</div>
+                  <div class="drop-item">News</div>
+                  <div class="drop-item">Events</div>
+                </div>
+              </li>
+              <li id="global-drop" class="list-item">
+                <img
+                  src="images/ob-globe-icon.svg"
+                  width="23px"
+                  style="margin-top: -5px"
+                  alt=""
+                />
+                Global-English
+                <div class="global-dropdown">
+                  <div class="drop-item first-border">
+                    <div class="sub-item-1">Region</div>
+                    <div class="sub-item-2">Language</div>
+                  </div>
+
+                  <div class="drop-item">
+                    <div class="sub-item-1">North America</div>
+                    <div class="sub-item-2">English</div>
+                  </div>
+                  <div class="drop-item">
+                    <div class="sub-item-1">Global</div>
+                    <div class="sub-item-2">English</div>
+                  </div>
+                  <div class="drop-item">
+                    <div class="sub-item-1"></div>
+                    <div class="sub-item-2">German</div>
+                  </div>
+                  <div class="drop-item">
+                    <div class="sub-item-1"></div>
+                    <div class="sub-item-2">Swedish</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="container nav-container">
+          <div class="nav-row">
+            <div class="nav-col">
+              <ul class="list-group">
+                <li class="list-item" id="product-drop">
+                  products
+
+                  <div class="product-dropdown">
+                    <div class="drop-item">Load Runners</div>
+                    <div class="drop-item">Roller Technologies</div>
+                    <div class="drop-item">Power Brushes</div>
+                    <div class="drop-item">Industrial Brushes</div>
+                    <div class="drop-item">Strip Brushes</div>
+                    <div class="drop-item">Cutting & Grinding Tools</div>
+                    <div class="drop-item">Polishing Tools & Comounds</div>
+                    <div class="drop-item">Diamond Tools</div>
+                    <div class="drop-item">Maintenance Brushes</div>
+                  </div>
+                </li>
+                <li class="list-item">application</li>
+                <li class="list-item" id="market-drop">
+                  markets
+                  <div class="markets-dropdown">
+                    <div class="drop-item">Oil & Gas</div>
+                    <div class="drop-item">Shipbuiding</div>
+                    <div class="drop-item">Building & Construction</div>
+                    <div class="drop-item">Metal Fabrication</div>
+                    <div class="drop-item">Rolling Mills</div>
+                  </div>
+                </li>
+                <li class="list-item" id="support-drop">
+                  support
+                  <div class="support-dropdown">
+                    <div class="drop-item">Literature</div>
+                    <div class="drop-item">Safety recommendations</div>
+                    <div class="drop-item">Certificates</div>
+                    <div class="drop-item">Term & Conditions</div>
+                    <div class="drop-item">Newsletter</div>
+                  </div>
+                </li>
+                <li class="list-item" id="search-drop">
+                  <img
+                    id="search-img"
+                    src="images/ob-search-icon.svg"
+                    width="23px"
+                    alt=""
+                  />
+                  <div id="search-box">
+                    <input type="text" placeholder="Search.." id="myInput" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="nav-slider">
+        <div class="nav-list">
+          <div id="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            <p>Back</p>
+          </div>
+          <div class="nav-item">
+            <p>Product</p>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          <div class="nav-item">
+            <p>Application</p>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          <div class="nav-item">
+            <p>Market</p>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          <div class="nav-item">
+            <p>Support</p>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          <div class="nav-item">
+            <p>About</p>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          <div class="nav-item">
+            <p>Contact</p>
+            <i class="fas fa-arrow-right" id="nav-arrow-contact"></i>
+
+            <div class="nav-slider-contact ">
+              <div class="nav-list-contact nav-list">
+                <div id="back-btn-contact">
+                  <i class="fas fa-arrow-left"></i>
+                  <p>Back</p>
+                </div>
+                <div class="nav-item">
+                  <p>North America</p>
+                </div>
+                <div class="nav-item">
+                  <p>Europe</p>
+                  
+                </div>
+                <div class="nav-item">
+                  <p>Asia</p>
+                  
+                </div>
+                <div class="nav-item">
+                  <p>Rest of the world</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img
+            src="/images/carosel01.webp"
+            class="hero-img"
+            width="100%"
+            alt="Chania"
+          />
+          <div class="carousel-caption">
+            <h3>A PROMISE + PERFORMANCE BUILT ON</h3>
+            <p class="text">TRADITION</p>
+            <p class="btn">Learn about our commitment to you</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img
+            src="/images/carosel02.webp"
+            class="hero-img"
+            width="100%"
+            alt="Chicago"
+          />
+          <div class="carousel-caption">
+            <h3>COST</h3>
+            <p class="text">REDUCTION</p>
+            <p class="btn">Learn more</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img
+            src="/images/carosel03.webp"
+            class="hero-img"
+            width="100%"
+            alt="New York"
+          />
+          <div class="carousel-caption">
+            <h3>HIGHLY-TRAINED</h3>
+            <p class="text">EXPERTS</p>
+            <p class="btn">Learn more</p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="/images/carosel04.jfif"
+            class="hero-img"
+            width="100%"
+            alt="New York"
+          />
+          <div class="carousel-caption">
+            <h3>HIGHEST QUALITY &</h3>
+            <p class="text">SAFETY</p>
+            <p class="btn">Learn more</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- About us container -->
+    <div class="container-fluid para">
+      <div class="container para-2">
+        <p>
+          <strong>Your challenge. Our solution.</strong> Osborn offers the best
+          solutions for your mechanical surface treatment challenges. Our
+          experts are highly trained to serve you with the optimum off-the-shelf
+          or customized tools, when and where you need them. Unlike others, we
+          help you optimize your process, meet the highest quality and safety
+          requirements and reduce your costs.
+        </p>
+
+        <div class="col-xs-12 link">
+          <a href="#">About Us</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shreea's part end -->
+
+
+
+
+    <!-- Shiv's part -->
+    <main>
+      <div class="container-fluid poduct-container">
+        <h4 class="product-main-heading">PRODUCTS</h4>
+        <div class="product-list">
+          <div class="product-row">
+            <div class="product-col">
+              <div class="product-image">
+                <img src="/images/loadrunners.jfif" class="img-fluid" alt="" />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading">Load Runners</h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+
+            <div class="product-col">
+              <div class="product-image">
+                <img src="/images/rollertech.jfif" class="img-fluid" alt="" />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading">Roller Technologies</h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+
+            <div class="product-col">
+              <div class="product-image">
+                <img src="/images/powerbrushes.jfif" class="img-fluid" alt="" />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading">Power Brushes</h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+            <div class="product-col">
+              <div class="product-image">
+                <img
+                  src="/images//industrialbrushes.jfif"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading">Industrial Brushes</h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+
+            <div class="product-col">
+              <div class="product-image">
+                <img src="/images/stripbrushes.jfif" class="img-fluid" alt="" />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading">Strip Brushes</h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+
+            <div class="product-col">
+              <div class="product-image">
+                <img
+                  src="/images/cuttinggrinding.jfif"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading large-heading">
+                  Cutting & Grinding Tools
+                </h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+
+            <div class="product-col">
+              <div class="product-image">
+                <img src="/images/polishing.jfif" class="img-fluid" alt="" />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading large-heading">
+                  Polishing Tools & Components
+                </h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+
+            <div class="product-col">
+              <div class="product-image">
+                <img
+                  src="/images/diamond tools.jfif"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading">Diamond Tools</h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+
+            <div class="product-col">
+              <div class="product-image">
+                <img
+                  src="/images/maintaincebrush.jfif"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="product-text">
+                <h4 class="product-heading">Maintaince Brush</h4>
+              </div>
+              <div class="product-button">
+                <p>View Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="main-heading">View All Product</h4>
+      <div class="container-fluid custom-solution-container">
+        <div class="container owl-container">
+          <h3>CUSTOM SOLUTIONS</h3>
+          <h4>
+            Providing custom products + solutions to following industries and
+            beyond
+          </h4>
+        </div>
+        <div class="container service-container">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="image-container">
+                <img src="/images/oil.webp" alt="" />
+              </div>
+              <div class="service-heading">
+                <h4>Oil & Gas</h4>
+              </div>
+              <hr />
+              <div class="service-text">
+                <p>
+                  Osborn manufactures a wide variety of highly efficient brushes
+                  and abrasives
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image-container">
+                <img src="/images/ship.webp" alt="" />
+              </div>
+              <div class="service-heading">
+                <h4>Shipbuilding</h4>
+              </div>
+              <hr />
+              <div class="service-text">
+                <p>
+                  Choosing the right tool can save you a lot of time and money.
+                  Grinding and cleaning
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image-container">
+                <img src="/images/building.webp" alt="" />
+              </div>
+              <div class="service-heading">
+                <h4>Building & Construction</h4>
+              </div>
+              <hr />
+              <div class="service-text">
+                <p>
+                  Osborn offers a wide variety of building and construction
+                  products. These range from
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image-container">
+                <img src="/images/metal.webp" alt="" />
+              </div>
+              <div class="service-heading">
+                <h4>Metal Fabrication</h4>
+              </div>
+              <hr />
+              <div class="service-text">
+                <p>
+                  Value add tools for metal fabrication. No matter what metal
+                  creation that is being cut,
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image-container">
+                <img src="/images/rolling.png" alt="" />
+              </div>
+              <div class="service-heading">
+                <h4>Metal Fabrication</h4>
+              </div>
+              <hr />
+              <div class="service-text">
+                <p>
+                  Better Primary Metal and Rolling Mill solutions. Osborn offers
+                  multiple
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Shiv's part end -->
+
+
+    <!-- Vaishnavi's part -->
+    <div class="container event-container">
+      <h3 class="text-center event-heading">NEWS AND EVENTS</h3>
+      <div class="event-row">
+        <div class="event-col">
+          <div class="image-container image-container-1">
+            <div class="image-text">
+              <p>Press Release</p>
+            </div>
+          </div>
+          <div class="event-text">
+            <p>
+              (Richmond, Indiana)
+              <strong
+                >Osborn, the world’s largest and most complete solution provider
+                of high-</strong
+              >
+            </p>
+          </div>
+          <span class="item-date">March 4, 2021</span>
+        </div>
+
+        <div class="event-col">
+          <div class="image-container image-container-2">
+            <div class="image-text">
+              <p>Product News</p>
+            </div>
+          </div>
+          <div class="event-text">
+            <p>
+              (Burgwald/Wunsiedel).
+              <strong
+                >Good things can always be made better. This is how Osborn
+                develops</strong
+              >
+            </p>
+          </div>
+          <span class="item-date">March 16, 2021</span>
+        </div>
+
+        <div class="event-col">
+          <div class="image-container image-container-3">
+            <div class="image-text">
+              <p>Company News</p>
+            </div>
+          </div>
+          <div class="event-text">
+            <p>
+              (Burgwald/Wunsiedel).
+              <strong
+                >All Dronco product labels have received a new design. Tidy and
+                fresh, with</strong
+              >
+            </p>
+          </div>
+          <span class="item-date">March 1, 2020</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid footer-main-container">
+        <div class="container footer-container">
+          <div class="footer-row">
+            <div class="footer-col footer-col-1">
+              <p class="copyright">© 2020 Osborn. All Rights Reserved</p>
+            </div>
+            <div class="footer-col footer-col-2">
+              <div class="item">Careers</div>
+              <div class="item">Privacy Policy</div>
+              <div class="item">Terms & Conditions</div>
+              <div class="item">Legal Information</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vaishnavi's part end -->
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
